@@ -17,7 +17,6 @@ function HexgridHeatmap(map, layername, addBefore) {
     this.map = map;
     this.layername = layername;
     this._setupLayers(layername, addBefore);
-    this._setupEvents();
     // Set up an R-tree to look for coordinates as they are stored in GeoJSON Feature objects
     this._tree = rbush(9,['["geometry"]["coordinates"][0]','["geometry"]["coordinates"][1]','["geometry"]["coordinates"][0]','["geometry"]["coordinates"][1]']);
 
@@ -60,13 +59,6 @@ HexgridHeatmap.prototype = {
         this.layer = this.map.getLayer(layername);
         this.source = this.map.getSource(layername);
     },
-    _setupEvents: function() {
-        var thisthis = this;
-        this.map.on("moveend", function() {
-            thisthis._updateGrid();
-        });
-    },
-
 
     /**
      * Set the data to visualize with this heatmap layer
