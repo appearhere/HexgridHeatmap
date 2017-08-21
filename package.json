@@ -1,6 +1,7 @@
 {
-  "name": "hexgrid-heatmap",
-  "version": "0.1.2",
+  "name": "@appearhere/hexgrid-heatmap",
+  "parentVersion": "0.1.2",
+  "version": "1.0.0",
   "description": "A hexgrid-based heatmap layer for your Mapbox GL JS map",
   "main": "HexgridHeatmap.js",
   "scripts": {
@@ -8,7 +9,6 @@
     "build": "browserify index.js -o dist/HexgridHeatmap.js",
     "dev": "watchify index.js -o dist/HexgridHeatmap.js --verbose"
   },
-  "author": "Sam Kronick (@kronick)",
   "license": "ISC",
   "dependencies": {
     "@turf/center": "^3.10.3",
