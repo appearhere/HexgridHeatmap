@@ -1,7 +1,7 @@
 {
   "name": "@appearhere/hexgrid-heatmap",
   "parentVersion": "0.1.2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A hexgrid-based heatmap layer for your Mapbox GL JS map",
   "main": "HexgridHeatmap.js",
   "scripts": {
@@ -22,7 +22,6 @@
     "url": "git+https://github.com/kronick/HexgridHeatmap.git"
   },
   "author": "Sam Kronick <sam.kronick@mapbox.com> (http://samkronick.com)",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/kronick/HexgridHeatmap/issues"
   },
