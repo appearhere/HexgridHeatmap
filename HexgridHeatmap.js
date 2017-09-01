@@ -110,6 +110,9 @@ HexgridHeatmap.prototype = {
         this._cellDensity = density;
     },
 
+    setCelSize: function(cellSize) {
+        this._cellSize = cellSize;
+    },
 
     /**
       * Manually force an update to the heatmap
